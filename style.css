@@ -352,6 +352,11 @@ button:focus:not(:focus-visible) {
 
   animation: bounceDown 1.2s infinite ease-in-out;
 }
+@media(max-width:768px){
+    .Designeddd{
+          bottom: 130px;
+    }
+}
 
 @keyframes bounceDown{
   0%, 100% { transform: translateX(-50%) translateY(0); }
