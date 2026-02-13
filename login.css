@@ -287,3 +287,8 @@ header .DESKTOP.subscribe a:first-child:hover {
   .login-art{ min-height: 320px; }
   .login-title{ font-size:38px; }
 }
+
+
+.contain-buttons{
+  margin-top: 50px;
+}
