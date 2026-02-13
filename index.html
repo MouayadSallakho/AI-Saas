@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SAAS</title>
+
+    <!-- Link AOS  -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google font -->
+    <link rel="preload" href="fonts/Sk-Modernist-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Sk-Modernist-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Link the style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <section class="herosection">
+<header>
+
+  <!-- ✅ DESKTOP ONLY (AOS WORKS HERE) -->
+  <div class="d-none d-lg-block"
+       data-aos="fade-down"
+       data-aos-easing="linear"
+       data-aos-duration="1100">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" alt="Logo AI Assa">
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <ul class="DESKTOP navbar-nav d-none d-lg-flex">
+          <li class="nav-item"><a class="nav-link activee" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+        </ul>
+
+        <!-- DESKTOP AUTH -->
+        <div class="DESKTOP subscribe d-none d-lg-flex gap-2">
+          <a href="register.html" class="btn btn-register">Register</a>
+          <a href="login.html" class="btn btn-login">Log In</a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- ✅ MOBILE ONLY (NO AOS HERE) -->
+  <div class="d-lg-none">
+    <nav class="navbar">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" alt="Logo AI Assa">
+        </a>
+
+        <!-- toggler: mobile only -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
+          <span class="icon">
+            <p></p>
+            <p></p>
+            <p></p>
+          </span>
+        </button>
+
+        <!-- MOBILE OFFCANVAS -->
+        <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+
+          <div class="offcanvas-header mobile-menu__header">
+            <div class="mobile-menu__brand">
+              <img src="images/Logo.png" alt="Logo Future Tech" class="mobile-menu__logo">
+            </div>
+
+            <button type="button" class="mobile-menu__close" data-bs-dismiss="offcanvas"
+              aria-label="Close">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div class="offcanvas-body mobile-menu__body">
+            <ul class="navbar-nav mobile-menu__links">
+              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.html">Contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            </ul>
+
+            <div class="mobile-menu__divider"></div>
+
+            <div class="mobile-menu__auth">
+              <a href="register.html" class="btn btn-register w-100">Register</a>
+              <a href="login.html" class="btn btn-login w-100">Log In</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+        <div   class="hero">
+            <div class="stars-layer"></div>
+            <div class="container">
+                <div data-aos="fade-up"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1100" class="content">
+                    <div  class="personsHuppy">
+                        <ul>
+                            <li>
+                                <img src="images/person1.png" alt="person1">
+                            </li>
+                            <li> <img src="images/person2.png" alt="person1"></li>
+                            <li> <img src="images/person3.png" alt="person1"></li>
+                            <li> <img src="images/person4.png" alt="person1"></li>
+                            <li> <img src="images/person5.png" alt="person1"></li>
+                        </ul>
+                        <div>
+                            <ul>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p>115+ happy clients</p>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <h1>Automate <span>Intelligence</span>. Accelerate Growth.</h1>
+                        <span>Our AI-powered SaaS platform empowers businesses to streamline operations, automate
+                            repetitive tasks, and make smarter, data-driven decisionsall from one intuitive
+                            dashboard.</span>
+                        <div class="start">
+                            <a href="#" class="btn">Get Started</a>
+                            <a href="#" class="btn">See Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <div class="count">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col col-6 col-sm-4">
+                        <p>Clients</p>
+                        <span>120K+</span>
+                    </div>
+                    <div class="col col2 col-6 col-sm-4">
+                        <p>Projects</p>
+                        <span>150+</span>
+                    </div>
+                    <div class="col col-6 col-sm-4">
+                        <p>5-Star Reviews</p>
+                        <span>32K+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="Designed">
+            <div class="container">
+                <div class="address">
+                    <div>
+                        <h2>Designed for Designers. Powered by <span>AI</span>.</h2>
+                        <span class="ss">
+                            Unlock the full potential of your creativity with our AI-powered design assistant.
+                            Explore new dimensions of desig
+                        </span>
+                    </div>
+                    <img class="rotate-inf" src="images/five.png" alt="image">
+                </div>
+                <div class="row g-3">
+                    <div data-aos-duration="1100" data-aos="fade-right" class="col col-lg-5 col-12">
+                        <div class="contai">
+                            <div>
+                                <p>
+                                    Skip the blank canvas and spark creativity instantly. Our AI generates high-quality,
+                                    on-brand design concepts within seconds
+                                </p>
+                                <img src="images/icon-top-right.png" alt="images/icon-top-right.png">
+                            </div>
+                            <span>
+                                Instant Ideation
+                            </span>
+                        </div>
+
+                    </div>
+                    <div data-aos-duration="1100" data-aos="fade-left" class=" col col-lg-7 col-12">
+                        <div class="contai">
+                            <div>
+                                <p>
+                                    No two creators are the same, and neither are their styles. Our AI learns from your
+                                    inputs, understands your aesthetic preferences, and fine-tunes every design
+                                </p>
+                                <img src="images/icon-top-right.png" alt="images/icon-top-right.png">
+                            </div>
+                            <span>
+                                Smart Adaptability
+                            </span>
+                        </div>
+                    </div>
+                    <div data-aos-duration="1100" data-aos="fade-right" class=" col col-lg-7 col-12">
+                        <div class="contai">
+                            <div>
+                                <p>
+                                    Design once, export anywhere. Whether you need high-res graphics for print,
+                                    responsive
+                                    visuals for the web, mobile-optimized assets,
+                                </p>
+                                <img src="images/icon-top-right.png" alt="images/icon-top-right.png">
+                            </div>
+                            <span>
+                                Multi-Format Export
+                            </span>
+                        </div>
+                    </div>
+                    <div data-aos-duration="1100" data-aos="fade-left" class=" col col-lg-5 col-12">
+                        <div class="contai">
+                            <div>
+                                <p>
+                                    Say goodbye to repetitive tweaks and endless back-and-forths. With intuitive
+                                    prompt-based editing
+                                </p>
+                                <img class="arrow" src="images/icon-top-right.png" alt="images/icon-top-right.png">
+                            </div>
+                            <span>
+                                Seamless Revisions
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section class="years">
+            <div class="container">
+                <div class="text">
+                    <span>2026</span>
+                    <p>Whether you're designing for personal projects, creative teams, or large-scale campaigns, our
+                        AI-powered platform is built to bring your ideas to life—quickly, beautifully, and
+                        intelligently.And the results? The numbers speak for themselves:</p>
+                </div>
+
+
+
+
+
+                <div class="swiper mySwiperPlans">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                                <div>
+                            <h3>2014</h3>
+                            <p>Year of establishment</p>
+                            <span>More than 10 years in the field</span>
+                            <img src="images/years1.png" alt="images/years1">
+                        </div>
+                        </div>
+                        <div class="swiper-slide swiper-slidee">                      <div>
+                            <h3>304</h3>
+                            <p>Projects are launched</p>
+                            <span>A lot of projects are done</span>
+                            <img src="images/years1.png" alt="images/years1">
+                        </div></div>
+                        <div class="swiper-slide">
+                                                <div>
+                            <h3>189</h3>
+                            <p>Clients are satisfied</p>
+                            <span>A lot of projects are done</span>
+                            <img src="images/years1.png" alt="images/years1">
+                        </div>
+                        </div>
+                        <div class="swiper-slide swiper-slidee">
+                                                   <div>
+                            <h3>12</h3>
+                            <p>Projects in work</p>
+                            <span>What we do right now</span>
+                            <img src="images/years1.png" alt="images/years1">
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next plans-next"></div>
+                    <div class="swiper-button-prev plans-prev"></div>
+                    <div class="swiper-pagination plans-pagination"></div>
+                </div>
+
+
+
+
+
+                <div class="contain-buttons">
+                    <a class="btn" href="#">Get Started <i class="fa-solid fa-arrow-right"></i> </a>
+                    <a class="btn" href="#">Slots are avaliable <span></span> </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Plans Section -->
+        <section class="plans">
+            <div class="container">
+
+                <div class="text">
+                    <h2>Choose the Plan That’s Right for You</h2>
+                    <p>
+                        Giving you access to essential features and over 1,000 creative tools. Upgrade to the Pro Plan
+                        to
+                        unlock powerful AI capabilities, cloud syncing, and a whole new level of creative freedom.
+                    </p>
+                </div>
+
+                <!-- Toggle -->
+                <div class="checkboxx">
+                    <button class="active" type="button">Monthly</button>
+                    <button type="button">Yearly</button>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper plans-swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Free -->
+                        <div class="swiper-slide">
+                            <div class="content">
+                                <p class="type">Free</p>
+                                <span>Everything you need to supercharge your productivity.</span>
+
+                                <p class="price">$0 <span>/ month</span></p>
+
+                                <div class="giveShadow"></div>
+
+                                <div class="list">
+                                    <p>What’s included</p>
+                                    <ul>
+                                        <li><i class="fa-regular fa-circle-check"></i> 20 design generations/month</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Low-res downloads</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Basic style presets</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Limited customization options
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button type="button">Subscribe <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Pro -->
+                        <div class="swiper-slide">
+                            <div class="content">
+                                <p class="type">Pro</p>
+                                <span>Unlock a new level of your personal productivity.</span>
+
+                                <p class="price discount">$17 <span>/ month</span></p>
+
+                                <div class="giveShadow"></div>
+
+                                <div class="list">
+                                    <p>What’s included</p>
+                                    <ul>
+                                        <li><i class="fa-regular fa-circle-check"></i> Everything in Free</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Enigma AI</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Unlimited design generations</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Custom Themes</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> High-resolution exports</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Custom Extensions</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Developer Tools</li>
+                                    </ul>
+                                </div>
+
+                                <button type="button">Subscribe <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Team -->
+                        <div class="swiper-slide">
+                            <div class="content">
+                                <p class="type">Team</p>
+                                <span>Everything you need to supercharge your productivity.</span>
+
+                                <p class="price discount">$37 <span>/ month</span></p>
+
+                                <div class="giveShadow"></div>
+
+                                <div class="list">
+                                    <p>What’s included</p>
+                                    <ul>
+                                        <li><i class="fa-regular fa-circle-check"></i> Everything in Free</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Unlimited Shared Commands</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Unlimited Shared Quicklinks</li>
+                                        <li><i class="fa-regular fa-circle-check"></i> Priority support</li>
+                                    </ul>
+                                </div>
+
+                                <button type="button">Subscribe <i class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="Questions">
+            <img class="rounded1" src="images/Rounded rectangle (1).png" alt="Rounded rectangle">
+            <img class="rounded2" src="images/Rounded rectangle2.png" alt="Rounded rectangle">
+            <img class="rounded3" src="images/Rounded-Circle.png" alt="Rounded rectangle">
+            <img class="rounded4" src="images/LineBottom.png" alt="Rounded rectangle">
+            <img class="rounded5" src="images/LineTop.png" alt="Rounded rectangle">
+            <img class="rounded6" src="images/Circle-orange.png" alt="Rounded rectangle">
+            <div class="container">
+
+                <div class="address">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>
+                        Got questions? We've got answers. Find everything you need to know about using our platform,
+                        plans, and features.
+                    </p>
+                </div>
+
+                <div data-aos="fade-up"
+     data-aos-duration="1100" class="accordion" id="accordionExample">
+
+                    <!-- 1 -->
+                    <div  class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is this platform used for?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It’s an AI-powered It’s an AI-powered design assistant that helps you generate,
+                                customize, and export creative assets in seconds. design assistant that helps you
+                                generate, customize, and export creative assets in seconds It’s an AI-powered design
+                                assistant that helps you generate, customize, and export creative assets in seconds.
+                                It’s an AI-powered design assistant that helps you generate, customize, and export
+                                creative assets in seconds..
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What happens if I hit my free generation limit?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can upgrade to continue generating, or wait until your monthly limit resets. It’s an
+                                AI-powered design assistant that helps you generate, customize, and export creative
+                                assets in seconds. It’s an AI-powered design assistant that helps you generate,
+                                customize, and export creative assets in seconds. It’s an AI-powered design assistant
+                                that helps you generate, customize, and export creative assets in seconds.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwoo" aria-expanded="false" aria-controls="collapseTwo">
+                                What happens if I hit my free generation limit?
+                            </button>
+                        </h2>
+                        <div id="collapseTwoo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can upgrade to continue generating, or wait until your monthly limit resets. It’s an
+                                AI-powered design assistant that helps you generate, customize, and export creative
+                                assets in seconds. It’s an AI-powered design assistant that helps you generate,
+                                customize, and export creative assets in seconds. It’s an AI-powered design assistant
+                                that helps you generate, customize, and export creative assets in seconds.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwooo" aria-expanded="false" aria-controls="collapseTwo">
+                                What happens if I hit my free generation limit?
+                            </button>
+                        </h2>
+                        <div id="collapseTwooo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can upgrade to continue generating, or wait until your monthly limit resets. It’s an
+                                AI-powered design assistant that helps you generate, customize, and export creative
+                                assets in seconds. It’s an AI-powered design assistant that helps you generate,
+                                customize, and export creative assets in seconds. It’s an AI-powered design assistant
+                                that helps you generate, customize, and export creative assets in seconds.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Do I need design experience to use it?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                No. It’s built for beginners and pros, with templates and AI guidance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Can I collaborate with my team?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Yes, the Team plan supports collaboration features and shared assets.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Is it really free to use?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Yes—there’s a free plan with limits. Paid plans unlock more features.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="Ready">
+                    <h2>Ready to Design Smarter?</h2>
+                    <p>Whether you're a freelancer, a team, or a growing agency our tools adapt to your workflow. Design
+                        faster. Deliver better.</p>
+                    <a class="" href="#">Get Started <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <Footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h2>About Us</h2>
+                    <span>We’re a team of designers, engineers, and innovators building AI tools that empower anyone to
+                        turn imagination into stunning visuals—faster, smarter, and effortlessly.</span>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-5">
+                        <div class="col-lg-4 col-md-4 col-6">
+                            <p>Useful Links</p>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Prices</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-6">
+                            <p>Help</p>
+                            <ul>
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <p>Connect With Us</p>
+                            <ul>
+                                <li><a href="#">27 Division St, New York,NY 10002, USA</a></li>
+                                <li><a href="#">+123 324 2653</a></li>
+                                <li><a href="#">username@mail.com</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linepipe">
+
+            </div>
+
+            <div>
+                <p>© 2024 All Right Reserved.</p>
+                <ul>
+                    <li><a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </Footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const startIndex = window.innerWidth < 768 ? 0 : 1;  // mobile: first, tablet+: second
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            initialSlide: startIndex,
+
+            coverflowEffect: {
+                rotate: 40,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+
+            spaceBetween: 24,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                768: { slidesPerView: 2.2 },
+                992: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
+
+    <script>
+        var swiperPlans = new Swiper(".mySwiperPlans", {
+            loop: true,
+            spaceBetween: 30,
+
+            pagination: {
+                el: ".plans-pagination",
+                clickable: true,
+            },
+
+
+            breakpoints: {
+                0: { slidesPerView: 1.3 },
+                576: { slidesPerView: 1.5 },
+                768: { slidesPerView: 2.4 },
+                992: { slidesPerView: 4 }
+            }
+        });
+
+    </script>
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Initialize AOS -->
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+
+</html>

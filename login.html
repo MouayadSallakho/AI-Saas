@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | AI SAAS</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome (optional icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container">
+      <img src="images/Logo.png" alt="logo">
+      <div>
+        <p>if you don't have an account </p>
+        <a class="" href="register.html">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="login-page">
+    <div class="container">
+      <div class="login-wrap row g-0">
+
+        <!-- LEFT: FORM -->
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-12 col-lg-6 col-md-6">
+          <div class="login-card">
+
+            <h1 class="login-title">Welcome Back!</h1>
+            <p class="login-subtitle">Log in to your account</p>
+
+            <form class="login-form">
+
+              <label class="field">
+                <span class="field-icon"><i class="fa-regular fa-user"></i></span>
+                <input type="text" placeholder="Email or Username" required>
+              </label>
+
+              <label class="field">
+                <span class="field-icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" placeholder="Password" required>
+                <button class="field-action" type="button" aria-label="Show password">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </label>
+
+              <div class="login-meta">
+                <a class="forgot" href="#">Forgot Password?</a>
+              </div>
+
+              <button class="btn-main w-100" type="submit">Log In</button>
+
+              <p class="signup-line">
+                Don’t have an account? <a href="register.html">Sign Up</a>
+              </p>
+
+              <div class="divider"><span>or</span></div>
+
+              <button class="btn-alt w-100" type="button">
+                <i class="fa-brands fa-google"></i> Log in with Google
+              </button>
+
+              <button class="btn-alt w-100" type="button">
+                <i class="fa-brands fa-facebook-f"></i> Log in with Facebook
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- RIGHT: IMAGE (EMPTY AREA FOR YOUR IMAGE) -->
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="lg-d-non col-12 col-lg-6 col-md-6">
+          <div class="login-art">
+            <!-- ✅ Put your image path here -->
+            <img src="images/login-image.png" alt="AI SAAS Visual" class="art-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
