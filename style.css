@@ -336,8 +336,27 @@ button:focus:not(:focus-visible) {
     background-image: url(images/back-hero.png);
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 
+.Designeddd{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  z-index: 1000000;
+
+  animation: bounceDown 1.2s infinite ease-in-out;
+}
+
+@keyframes bounceDown{
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(10px); }
+}
 .herosection .hero {
     position: relative;
     height: calc(100vh - 67px);
