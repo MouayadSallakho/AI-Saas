@@ -25,6 +25,10 @@ body {
     color: #FFFFFF;
     background-color: rgb(1, 1, 1);
 }
+html, body {
+  overflow-x: hidden;
+  /* max-width: 1400px; */
+}
 
 html {
     scroll-behavior: smooth;
@@ -522,7 +526,18 @@ button:focus:not(:focus-visible) {
 
 
 
-
+@media(min-width:1537px){
+        .herosection{
+        height: 100%;
+    }
+    .herosection .hero {
+    height: 100%;
+}
+.herosection .hero .container .content  {
+    margin-top: 100px;
+        margin-bottom: 70px;
+}
+}
 @media(max-width:992px){
     .herosection{
         /* height: 100%; */
@@ -552,13 +567,13 @@ button:focus:not(:focus-visible) {
 
 @media(max-width:768px){
         .herosection{
-        height: 100%;
+        /* height: 100%; */
     }
     .herosection .hero {
     height: 100%;
 }
 .herosection .hero .container .content .personsHuppy {
-    margin-top: 120px;
+    margin-top: 0px;
 }
 .herosection .hero .content .text h1{
     font-size: 45px;
@@ -1333,6 +1348,17 @@ padding: 5px;
   position: relative;
   overflow: hidden;
 }
+
+
+@media (min-width: 1550px) {
+  .Questions {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 .rounded2{
     position: absolute;
     left: 0px;
@@ -1395,6 +1421,8 @@ padding: 5px;
     }
 
 }
+
+
 
 
 .Questions .address h2{

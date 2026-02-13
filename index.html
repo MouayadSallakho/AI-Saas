@@ -7,8 +7,8 @@
     <title>AI SAAS</title>
 
     <!-- Link AOS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Google font -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google font -->
     <link rel="preload" href="fonts/Sk-Modernist-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Sk-Modernist-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -29,103 +29,108 @@
 
 
     <section class="herosection">
-        <header>
+<header>
 
-            <!-- ✅ DESKTOP ONLY (AOS WORKS HERE) -->
-            <div class="d-none d-lg-block" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100">
+  <!-- ✅ DESKTOP ONLY (AOS WORKS HERE) -->
+  <div class="d-none d-lg-block"
+       data-aos="fade-down"
+       data-aos-easing="linear"
+       data-aos-duration="1300">
 
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
 
-                        <a class="navbar-brand" href="#">
-                            <img src="images/Logo.png" alt="Logo AI Assa">
-                        </a>
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" alt="Logo AI Assa">
+        </a>
 
-                        <!-- DESKTOP MENU -->
-                        <ul class="DESKTOP navbar-nav d-none d-lg-flex">
-                            <li class="nav-item"><a class="nav-link activee" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="login.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="register.html">Contact us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-                        </ul>
+        <!-- DESKTOP MENU -->
+        <ul class="DESKTOP navbar-nav d-none d-lg-flex">
+          <li class="nav-item"><a class="nav-link activee" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+        </ul>
 
-                        <!-- DESKTOP AUTH -->
-                        <div class="DESKTOP subscribe d-none d-lg-flex gap-2">
-                            <a href="register.html" class="btn btn-register">Register</a>
-                            <a href="login.html" class="btn btn-login">Log In</a>
-                        </div>
+        <!-- DESKTOP AUTH -->
+        <div class="DESKTOP subscribe d-none d-lg-flex gap-2">
+          <a href="register.html" class="btn btn-register">Register</a>
+          <a href="login.html" class="btn btn-login">Log In</a>
+        </div>
 
-                    </div>
-                </nav>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- ✅ MOBILE ONLY (NO AOS HERE) -->
+  <div class="d-lg-none" >
+    <nav class="navbar ">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo.png" alt="Logo AI Assa">
+        </a>
+
+        <!-- toggler: mobile only -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
+          <span class="icon">
+            <p></p>
+            <p></p>
+            <p></p>
+          </span>
+        </button>
+
+        <!-- MOBILE OFFCANVAS -->
+        <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+
+          <div class="offcanvas-header mobile-menu__header">
+            <div class="mobile-menu__brand">
+              <img src="images/Logo.png" alt="Logo Future Tech" class="mobile-menu__logo">
             </div>
 
+            <button type="button" class="mobile-menu__close" data-bs-dismiss="offcanvas"
+              aria-label="Close">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
 
-            <!-- ✅ MOBILE ONLY (NO AOS HERE) -->
-            <div class="d-lg-none">
-                <nav class="navbar">
-                    <div class="container">
+          <div class="offcanvas-body mobile-menu__body">
+            <ul class="navbar-nav mobile-menu__links">
+              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="login.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.html">Contact us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            </ul>
 
-                        <a class="navbar-brand" href="#">
-                            <img src="images/Logo.png" alt="Logo AI Assa">
-                        </a>
+            <div class="mobile-menu__divider"></div>
 
-                        <!-- toggler: mobile only -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                            aria-label="Toggle navigation">
-                            <span class="icon">
-                                <p></p>
-                                <p></p>
-                                <p></p>
-                            </span>
-                        </button>
-
-                        <!-- MOBILE OFFCANVAS -->
-                        <div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-
-                            <div class="offcanvas-header mobile-menu__header">
-                                <div class="mobile-menu__brand">
-                                    <img src="images/Logo.png" alt="Logo Future Tech" class="mobile-menu__logo">
-                                </div>
-
-                                <button type="button" class="mobile-menu__close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close">
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                            </div>
-
-                            <div class="offcanvas-body mobile-menu__body">
-                                <ul class="navbar-nav mobile-menu__links">
-                                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="login.html">Services</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="register.html">Contact us</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-                                </ul>
-
-                                <div class="mobile-menu__divider"></div>
-
-                                <div class="mobile-menu__auth">
-                                    <a href="register.html" class="btn btn-register w-100">Register</a>
-                                    <a href="login.html" class="btn btn-login w-100">Log In</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </nav>
+            <div class="mobile-menu__auth">
+              <a href="register.html" class="btn btn-register w-100">Register</a>
+              <a href="login.html" class="btn btn-login w-100">Log In</a>
             </div>
+          </div>
+        </div>
 
-        </header>
+      </div>
+    </nav>
+  </div>
+
+</header>
 
 
-        <div class="hero">
+        <div   class="hero">
             <div class="stars-layer"></div>
             <div class="container">
-                <div data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100"
-                    class="content">
-                    <div class="personsHuppy">
+                <div data-aos="fade-up"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1300" class="content">
+                    <div  class="personsHuppy">
                         <ul>
                             <li>
                                 <img src="images/person1.png" alt="person1">
@@ -198,7 +203,7 @@
                     <img class="rotate-inf" src="images/five.png" alt="image">
                 </div>
                 <div class="row g-3">
-                    <div data-aos-duration="1100" data-aos="fade-right" class="col col-lg-5 col-12">
+                    <div data-aos-duration="1300" data-aos="fade-right" class="col col-lg-5 col-12">
                         <div class="contai">
                             <div>
                                 <p>
@@ -213,7 +218,7 @@
                         </div>
 
                     </div>
-                    <div data-aos-duration="1100" data-aos="fade-left" class=" col col-lg-7 col-12">
+                    <div data-aos-duration="1300" data-aos="fade-left" class=" col col-lg-7 col-12">
                         <div class="contai">
                             <div>
                                 <p>
@@ -227,7 +232,7 @@
                             </span>
                         </div>
                     </div>
-                    <div data-aos-duration="1100" data-aos="fade-right" class=" col col-lg-7 col-12">
+                    <div data-aos-duration="1300" data-aos="fade-right" class=" col col-lg-7 col-12">
                         <div class="contai">
                             <div>
                                 <p>
@@ -242,7 +247,7 @@
                             </span>
                         </div>
                     </div>
-                    <div data-aos-duration="1100" data-aos="fade-left" class=" col col-lg-5 col-12">
+                    <div data-aos-duration="1300" data-aos="fade-left" class=" col col-lg-5 col-12">
                         <div class="contai">
                             <div>
                                 <p>
@@ -279,36 +284,34 @@
                 <div class="swiper mySwiperPlans">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div>
-                                <h3>2014</h3>
-                                <p>Year of establishment</p>
-                                <span>More than 10 years in the field</span>
-                                <img src="images/years1.png" alt="images/years1">
-                            </div>
+                                                <div>
+                            <h3>2014</h3>
+                            <p>Year of establishment</p>
+                            <span>More than 10 years in the field</span>
+                            <img src="images/years1.png" alt="images/years1">
                         </div>
-                        <div class="swiper-slide swiper-slidee">
-                            <div>
-                                <h3>304</h3>
-                                <p>Projects are launched</p>
-                                <span>A lot of projects are done</span>
-                                <img src="images/years1.png" alt="images/years1">
-                            </div>
                         </div>
+                        <div class="swiper-slide swiper-slidee">                      <div>
+                            <h3>304</h3>
+                            <p>Projects are launched</p>
+                            <span>A lot of projects are done</span>
+                            <img src="images/years1.png" alt="images/years1">
+                        </div></div>
                         <div class="swiper-slide">
-                            <div>
-                                <h3>189</h3>
-                                <p>Clients are satisfied</p>
-                                <span>A lot of projects are done</span>
-                                <img src="images/years1.png" alt="images/years1">
-                            </div>
+                                                <div>
+                            <h3>189</h3>
+                            <p>Clients are satisfied</p>
+                            <span>A lot of projects are done</span>
+                            <img src="images/years1.png" alt="images/years1">
+                        </div>
                         </div>
                         <div class="swiper-slide swiper-slidee">
-                            <div>
-                                <h3>12</h3>
-                                <p>Projects in work</p>
-                                <span>What we do right now</span>
-                                <img src="images/years1.png" alt="images/years1">
-                            </div>
+                                                   <div>
+                            <h3>12</h3>
+                            <p>Projects in work</p>
+                            <span>What we do right now</span>
+                            <img src="images/years1.png" alt="images/years1">
+                        </div>
                         </div>
                     </div>
 
@@ -461,10 +464,11 @@
                     </p>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1100" class="accordion" id="accordionExample">
+                <div data-aos="fade-up"
+     data-aos-duration="1300" class="accordion" id="accordionExample">
 
                     <!-- 1 -->
-                    <div class="accordion-item">
+                    <div  class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -610,14 +614,14 @@
 
     <Footer>
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4">
+            <div class="row g-4">
+                <div class="col-lg-3">
                     <h2>About Us</h2>
                     <span>We’re a team of designers, engineers, and innovators building AI tools that empower anyone to
                         turn imagination into stunning visuals—faster, smarter, and effortlessly.</span>
                 </div>
                 <div class="col-lg-8">
-                    <div class="row g-5">
+                    <div class="row g-4">
                         <div class="col-lg-4 col-md-4 col-6">
                             <p>Useful Links</p>
                             <ul>
@@ -679,6 +683,11 @@
             </div>
         </div>
     </Footer>
+
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -751,18 +760,10 @@
 
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Initialize AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Initialize AOS -->
 <script>
-  window.addEventListener("load", function () {
-    AOS.init({
-      once: true,
-      duration: 1100
-    });
-
-    // Recalculate positions after everything loads (images/fonts)
-    AOS.refreshHard();
-  });
+  AOS.init();
 </script>
 
 
